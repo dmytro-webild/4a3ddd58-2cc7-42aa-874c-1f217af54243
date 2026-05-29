@@ -3,7 +3,7 @@
 import ReactLenis from "lenis/react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
-import MediaAbout from '@/components/sections/about/MediaAbout';
+import SplitAbout from '@/components/sections/about/SplitAbout';
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import { Layers } from "lucide-react";
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
@@ -86,14 +86,17 @@ export default function WebAgencyThemePage() {
                     />
                 </div>
                 <div id="about" data-section="about">
-                    <MediaAbout
+                    <SplitAbout
                         title="Über mich"
-                        description="Hi, ich bin Corbin – 24 Jahre alt, aus Magdeburg, und Gründer von Growthlab.origin. Neben meinem berufsbegleitenden Studium der Wirtschaftspsychologie beschäftige ich mich jeden Tag mit einer Frage: Wie können Unternehmen mithilfe von KI effizienter arbeiten und profitabler wachsen?
-Genau dafür gibt es Growthlab.origin. Ich helfe regionalen Unternehmen, sich zu digitalisieren – mit smarten KI-Lösungen, die Routineaufgaben übernehmen, und mit Webseiten, die neue Kunden gewinnen. Mein Anspruch: Technologie soll nicht kompliziert sein, sondern dir Zeit und Geld sparen, damit du dich auf das Wesentliche konzentrieren kannst."
+                        description="Hi, ich bin Corbin – 24 Jahre alt, aus Magdeburg, und Gründer von Growthlab.origin. Neben meinem berufsbegleitenden Studium der Wirtschaftspsychologie beschäftige ich mich jeden Tag mit einer Frage: Wie können Unternehmen mithilfe von KI effizienter arbeiten und profitabler wachsen?\nGenau dafür gibt es Growthlab.origin. Ich helfe regionalen Unternehmen, sich zu digitalisieren – mit smarten KI-Lösungen, die Routineaufgaben übernehmen, und mit Webseiten, die neue Kunden gewinnen. Mein Anspruch: Technologie soll nicht kompliziert sein, sondern dir Zeit und Geld sparen, damit du dich auf das Wesentliche konzentrieren kannst."
                         tag="Gründer von Growthlab.origin"
                         imageSrc="https://img.b2bpic.net/free-photo/business-coworkers-shaking-hands-meeting-office-focus-is-businessman_637285-7009.jpg?id=26390769"
                         imageAlt="Max Mustermann, Gründer von Growthlab.origin"
                         useInvertedBackground={false}
+                        imagePosition="left"
+                        textboxLayout="default"
+                        textBoxClassName="bg-card text-foreground p-8 rounded-lg shadow-sm"
+                        mediaAnimation="slide-up"
                     />
                 </div>
                 <div id="contact" data-section="contact">
