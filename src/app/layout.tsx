@@ -9,6 +9,7 @@ import { Open_Sans } from "next/font/google";
 import { Manrope } from "next/font/google";
 import { DM_Sans } from "next/font/google";
 import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 
 
@@ -21,10 +22,11 @@ export const metadata: Metadata = {
 
 
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export default function RootLayout({
@@ -35,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${poppins.variable} antialiased`}>
+        <body className={`${roboto.variable} antialiased`}>
           
           {children}
           <script
