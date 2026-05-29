@@ -9,6 +9,7 @@ import { Layers } from "lucide-react";
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBaseReveal from "@/components/sections/footer/FooterBaseReveal";
+import RotatingGradientBackground from '@/components/background/RotatingGradientBackground';
 
 export default function WebAgencyThemePage() {
     const navItems = [
@@ -20,7 +21,7 @@ export default function WebAgencyThemePage() {
 
     return (
         <ThemeProvider
-            defaultButtonVariant="icon-arrow"
+            defaultButtonVariant="directional-hover"
             defaultTextAnimation="entrance-slide"
             borderRadius="soft"
             contentWidth="medium"
@@ -31,7 +32,17 @@ export default function WebAgencyThemePage() {
             secondaryButtonStyle="glass"
             headingFontWeight="normal"
         >
-            <ReactLenis root>
+            <RotatingGradientBackground
+                gradientColorStart="var(--accent)"
+                gradientColorEnd="var(--background-accent)"
+                bigCircleSize="30vw"
+                smallCircleSize="25vw"
+                blurAmount="150px"
+                opacity={0.6}
+                showSparkles={false}
+                className="fixed inset-0 z-0"
+            />
+            <ReactLenis root className="relative z-10">
                 <NavbarLayoutFloatingInline
                     navItems={navItems}
                     brandName="Growthlab.origin"
