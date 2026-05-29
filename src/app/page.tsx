@@ -22,7 +22,7 @@ export default function WebAgencyThemePage() {
         <ThemeProvider
             defaultButtonVariant="icon-arrow"
             defaultTextAnimation="entrance-slide"
-            borderRadius="pill"
+            borderRadius="soft"
             contentWidth="medium"
             sizing="medium"
             background="aurora"
@@ -88,7 +88,7 @@ export default function WebAgencyThemePage() {
                 <div id="about" data-section="about">
                     <SplitAbout
                         title="Über mich"
-                        description="Hi, ich bin Corbin – 24 Jahre alt, aus Magdeburg, und Gründer von Growthlab.origin. Neben meinem berufsbegleitenden Studium der Wirtschaftspsychologie beschäftige ich mich jeden Tag mit einer Frage: Wie können Unternehmen mithilfe von KI effizienter arbeiten und profitabler wachsen?\nGenau dafür gibt es Growthlab.origin. Ich helfe regionalen Unternehmen, sich zu digitalisieren – mit smarten KI-Lösungen, die Routineaufgaben übernehmen, und mit Webseiten, die neue Kunden gewinnen. Mein Anspruch: Technologie soll nicht kompliziert sein, sondern dir Zeit und Geld sparen, damit du dich auf das Wesentliche konzentrieren kannst."
+                        description="Hi, ich bin Corbin – 24 Jahre alt, aus Magdeburg, und Gründer von Growthlab.origin. Neben meinem berufsbegleitenden Studium der Wirtschaftspsychologie beschäftige ich mich jeden Tag mit einer Frage: Wie können Unternehmen mithilfe von KI effizienter arbeiten und profitabler wachsen?\n\nGenau dafür gibt es Growthlab.origin. Ich helfe regionalen Unternehmen, sich zu digitalisieren – mit smarten KI-Lösungen, die Routineaufgaben übernehmen, und mit Webseiten, die neue Kunden gewinnen. Mein Anspruch: Technologie soll nicht kompliziert sein, sondern dir Zeit und Geld sparen, damit du dich auf das Wesentliche konzentrieren kannst."
                         tag="Gründer von Growthlab.origin"
                         imageSrc="https://img.b2bpic.net/free-photo/business-coworkers-shaking-hands-meeting-office-focus-is-businessman_637285-7009.jpg?id=26390769"
                         imageAlt="Max Mustermann, Gründer von Growthlab.origin"
@@ -107,6 +107,9 @@ export default function WebAgencyThemePage() {
                                 title: "Zeit- & Kostenersparnis",                                description: "Technologie soll einfach sein und Unternehmen dabei helfen, sich auf ihr Kerngeschäft zu konzentrieren."
                             }
                         ]}
+                        textBoxClassName="p-8 lg:p-12"
+                        titleClassName="mb-8"
+                        descriptionClassName="leading-relaxed"
                     />
                 </div>
                 <div id="contact" data-section="contact">
