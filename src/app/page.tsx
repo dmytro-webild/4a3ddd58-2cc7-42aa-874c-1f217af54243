@@ -91,7 +91,7 @@ export default function WebAgencyThemePage() {
                         description="Hi, ich bin Corbin – 24 Jahre alt, aus Magdeburg, und Gründer von Growthlab.origin. Neben meinem berufsbegleitenden Studium der Wirtschaftspsychologie beschäftige ich mich jeden Tag mit einer Frage: Wie können Unternehmen mithilfe von KI effizienter arbeiten und profitabler wachsen?
 Genau dafür gibt es Growthlab.origin. Ich helfe regionalen Unternehmen, sich zu digitalisieren – mit smarten KI-Lösungen, die Routineaufgaben übernehmen, und mit Webseiten, die neue Kunden gewinnen. Mein Anspruch: Technologie soll nicht kompliziert sein, sondern dir Zeit und Geld sparen, damit du dich auf das Wesentliche konzentrieren kannst."
                         tag="Gründer von Growthlab.origin"
-                        imageSrc="https://img.b2bpic.net/free-photo/portrait-beautiful-sweet-cute-smiling-brunette-woman-girl-casual-gray-sweater-model-posing-studio-sitting-chair_158538-13016.jpg?id=7201422"
+                        imageSrc="https://img.b2bpic.net/free-photo/business-coworkers-shaking-hands-meeting-office-focus-is-businessman_637285-7009.jpg?id=26390769"
                         imageAlt="Max Mustermann, Gründer von Growthlab.origin"
                         useInvertedBackground={false}
                     />
