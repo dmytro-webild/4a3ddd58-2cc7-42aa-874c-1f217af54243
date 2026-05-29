@@ -35,12 +35,12 @@ export default function WebAgencyThemePage() {
                 <NavbarLayoutFloatingInline
                     navItems={navItems}
                     brandName="Growthlab.origin"
-                    button={{ text: "Termin buchen", href: "#contact" }}
+                    button={{ text: "Kostenloses Erstgespräch", href: "#contact" }}
                 />
                 <div id="hero" data-section="hero">
                     <HeroSplitKpi
                         background={{ variant: "radial-gradient" }}
-                        title="Mehr Zeit fürs Wesentliches – dank KI & smarten Webseiten"
+                        title="Mehr Zeit fürs Wesentliche — angetrieben von KI & smarten Webseiten"
                         description="Wir automatisieren deine Terminbuchung und bauen Webseiten, die Kunden gewinnen."
                         enableKpiAnimation={false}
                         kpis={[
