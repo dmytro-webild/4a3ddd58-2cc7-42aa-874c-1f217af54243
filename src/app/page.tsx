@@ -40,8 +40,8 @@ export default function WebAgencyThemePage() {
                 <div id="hero" data-section="hero">
                     <HeroSplitKpi
                         background={{ variant: "radial-gradient" }}
-                        title="Mehr Zeit fürs Wesentliche — angetrieben von KI & smarten Webseiten"
-                        description="Wir automatisieren deine Terminbuchung und bauen Webseiten, die Kunden gewinnen."
+                        title="Smarte Termine. Starke Webseiten."
+                        description="Wir automatisieren deine Buchungen mit KI und bauen Webseiten, die wirklich verkaufen."
                         enableKpiAnimation={false}
                         kpis={[
                             { value: "90%", label: "Effizienzsteigerung" },
