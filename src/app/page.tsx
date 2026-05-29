@@ -26,10 +26,10 @@ export default function WebAgencyThemePage() {
             contentWidth="medium"
             sizing="medium"
             background="aurora"
-            cardStyle="solid"
-            primaryButtonStyle="gradient"
+            cardStyle="glass-elevated"
+            primaryButtonStyle="shadow"
             secondaryButtonStyle="glass"
-            headingFontWeight="medium"
+            headingFontWeight="normal"
         >
             <ReactLenis root>
                 <NavbarLayoutFloatingInline
@@ -95,7 +95,6 @@ export default function WebAgencyThemePage() {
                         useInvertedBackground={false}
                         imagePosition="left"
                         textboxLayout="default"
-                        textBoxClassName="bg-card text-foreground p-8 rounded-lg shadow-sm"
                         mediaAnimation="slide-up"
                         bulletPoints={[
                             {
