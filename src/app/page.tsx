@@ -5,10 +5,10 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
 import MediaAbout from '@/components/sections/about/MediaAbout';
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
-import { Layers, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Layers } from "lucide-react";
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import FooterCard from "@/components/sections/footer/FooterCard";
+import FooterBaseReveal from "@/components/sections/footer/FooterBaseReveal";
 
 export default function WebAgencyThemePage() {
     const navItems = [
@@ -43,7 +43,11 @@ export default function WebAgencyThemePage() {
                         title="Mehr Zeit fürs Wesentliche – dank KI & smarter Webseiten"
                         description="Wir helfen Unternehmen, effizienter zu wachsen. Unser KI-Buchungsassistent übernimmt Termine und Anfragen rund um die Uhr, beantwortet Kundenanfragen automatisch und minimiert Nichterscheinen – für nahtlose Kundeninteraktionen und reduzierte Verwaltungskosten."
                         enableKpiAnimation={false}
-                        kpis={[]}
+                        kpis={[
+                            { value: "90%", label: "Effizienzsteigerung" },
+                            { value: "24/7", label: "Verfügbarkeit" },
+                            { value: "30%", label: "Kostenersparnis" }
+                        ]}
                         buttons={[
                             {
                                 text: "Kostenloses Erstgespräch",                                href: "#contact"
@@ -105,14 +109,9 @@ export default function WebAgencyThemePage() {
                         useInvertedBackground={false}
                     />
                 </div>
-                <FooterCard
+                <FooterBaseReveal
                     logoText="Growthlab.origin"
                     copyrightText="© 2024 Growthlab.origin. Alle Rechte vorbehalten."
-                    socialLinks={[
-                        { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-                        { icon: Instagram, href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
-                        { icon: Linkedin, href: "https://linkedin.com", ariaLabel: "Connect on LinkedIn" }
-                    ]}
                     columns={[
                         { title: "Navigation", items: [{ label: "Start", href: "#hero" }, { label: "Leistungen", href: "#services" }, { label: "Über mich", href: "#about" }, { label: "Kontakt", href: "#contact" }] }
                     ]}
