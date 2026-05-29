@@ -26,7 +26,7 @@ export default function WebAgencyThemePage() {
             contentWidth="medium"
             sizing="medium"
             background="aurora"
-            cardStyle="layered-gradient"
+            cardStyle="solid"
             primaryButtonStyle="gradient"
             secondaryButtonStyle="glass"
             headingFontWeight="medium"
@@ -40,8 +40,8 @@ export default function WebAgencyThemePage() {
                 <div id="hero" data-section="hero">
                     <HeroSplitKpi
                         background={{ variant: "radial-gradient" }}
-                        title="Mehr Zeit fürs Wesentliche – dank KI & smarter Webseiten"
-                        description="Wir helfen Unternehmen, effizienter zu wachsen. Unser KI-Buchungsassistent übernimmt Termine und Anfragen rund um die Uhr, beantwortet Kundenanfragen automatisch und minimiert Nichterscheinen – für nahtlose Kundeninteraktionen und reduzierte Verwaltungskosten."
+                        title="Mehr Zeit fürs Wesentliches – dank KI & smarten Webseiten"
+                        description="Wir automatisieren deine Terminbuchung und bauen Webseiten, die Kunden gewinnen."
                         enableKpiAnimation={false}
                         kpis={[
                             { value: "90%", label: "Effizienzsteigerung" },
@@ -51,9 +51,6 @@ export default function WebAgencyThemePage() {
                         buttons={[
                             {
                                 text: "Kostenloses Erstgespräch",                                href: "#contact"
-                            },
-                            {
-                                text: "Leistungen ansehen",                                href: "#services"
                             }
                         ]}
                         avatars={[]}
@@ -74,11 +71,11 @@ export default function WebAgencyThemePage() {
                         tagIcon={Layers}
                         features={[
                             {
-                                id: "ki-booking-assistant",                                title: "KI-Buchungsassistent",                                author: "",                                description: "Der smarte Assistent übernimmt die Terminplanung 24/7, beantwortet Kundenanfragen automatisch und minimiert Nichterscheinen – für nahtlose Kundeninteraktionen und reduzierte Verwaltungskosten.",                                tags: ["KI", "Automatisierung"],
+                                id: "ki-booking-assistant",                                title: "KI-Telefonassistent",                                author: "",                                description: "Erreichbar rund um die Uhr – kein verpasster Anruf, kein entgangener Auftrag.\nBucht Termine automatisch direkt in den Kalender.\nBeantwortet wiederkehrende Kundenfragen sofort.\nReduziert No-Shows durch automatische Erinnerungen.\nKlingt natürlich und entlastet dein Team spürbar.",                                tags: ["KI", "Automatisierung"],
                                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency/process/process1.webp",                                imageAlt: "KI-Buchungsassistent"
                             },
                             {
-                                id: "website-creation",                                title: "Webseiten-Erstellung",                                author: "",                                description: "Moderne, schnelle und ansprechende Webseiten, die nicht nur beeindrucken, sondern auch Besucher effektiv in zahlende Kunden umwandeln.",                                tags: ["Webdesign", "Performance"],
+                                id: "website-creation",                                title: "Webseiten-Erstellung",                                author: "",                                description: "Moderne, schnelle Webseiten, die auf jedem Gerät überzeugen.\nKlar auf Anfragen und Buchungen ausgerichtet (mehr Kunden).\nSuchmaschinenfreundlich für bessere Sichtbarkeit.\nSchlüsselfertig – ohne Technik-Stress für dich.\nIndividuelles Design statt Baukasten-Optik.",                                tags: ["Webdesign", "Performance"],
                                 imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/default/templates/web-agency/process/process3.webp",                                imageAlt: "Webseiten-Erstellung"
                             }
                         ]}
@@ -103,7 +100,7 @@ export default function WebAgencyThemePage() {
                         title="Bereit für mehr Effizienz?"
                         description="Buchen Sie jetzt Ihr kostenloses Erstgespräch und entdecken Sie, wie KI und professionelle Webseiten Ihr Geschäft transformieren können."
                         buttons={[
-                            { text: "Jetzt Termin buchen", href: "#contact" }
+                            { text: "Termin anfragen", href: "#contact" }
                         ]}
                         background={{ variant: "radial-gradient" }}
                         useInvertedBackground={false}
