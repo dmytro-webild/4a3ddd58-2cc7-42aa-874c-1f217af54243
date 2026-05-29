@@ -7,21 +7,16 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 
-const halant = Halant({
-  variable: "--font-halant",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: 'PixelForge Digital: Creative Web Agency',
   description: 'PixelForge Digital crafts stunning, high-performance websites that captivate audiences and drive results. Elevate your online presence with our expert web design and development services.',
 };
+
+const inter = Inter({
+  variable: "--font-inter",  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -31,9 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} antialiased`}
-        >
+        <body className={`${inter.variable} antialiased`}>
           <Tag />
           {children}
           <script
