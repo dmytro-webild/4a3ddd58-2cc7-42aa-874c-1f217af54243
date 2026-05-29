@@ -35,7 +35,7 @@ export default function WebAgencyThemePage() {
                 <NavbarLayoutFloatingInline
                     navItems={navItems}
                     brandName="Growthlab.origin"
-                    button={{ text: "Kostenloses Erstgespräch", href: "#contact" }}
+                    button={{ text: "Termin buchen", href: "#contact" }}
                 />
                 <div id="hero" data-section="hero">
                     <HeroSplitKpi
@@ -61,6 +61,7 @@ export default function WebAgencyThemePage() {
                         showMarqueeCard={false}
                         marqueeItems={[]}
                         marqueeClassName="md:mb-5"
+                        containerClassName="gap-x-12"
                     />
                 </div>
                 <div id="services" data-section="services">
