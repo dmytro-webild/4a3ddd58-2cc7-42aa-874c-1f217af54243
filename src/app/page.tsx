@@ -97,6 +97,17 @@ export default function WebAgencyThemePage() {
                         textboxLayout="default"
                         textBoxClassName="bg-card text-foreground p-8 rounded-lg shadow-sm"
                         mediaAnimation="slide-up"
+                        bulletPoints={[
+                            {
+                                title: "KI-gestützte Effizienz",                                description: "Fokus auf die Automatisierung von Routineaufgaben und Steigerung der Arbeitsproduktivität."
+                            },
+                            {
+                                title: "Digitale Transformation",                                description: "Entwicklung smarter KI-Lösungen und leistungsstarker Webseiten für regionales Unternehmenswachstum."
+                            },
+                            {
+                                title: "Zeit- & Kostenersparnis",                                description: "Technologie soll einfach sein und Unternehmen dabei helfen, sich auf ihr Kerngeschäft zu konzentrieren."
+                            }
+                        ]}
                     />
                 </div>
                 <div id="contact" data-section="contact">
