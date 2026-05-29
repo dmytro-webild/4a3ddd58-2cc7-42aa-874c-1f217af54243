@@ -18,12 +18,9 @@ export const metadata: Metadata = {
 
 
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -35,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${manrope.variable} ${dmSans.variable} antialiased`}>
+        <body className={`${inter.variable} antialiased`}>
           
           {children}
           <script
