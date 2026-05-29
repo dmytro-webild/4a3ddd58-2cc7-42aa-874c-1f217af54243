@@ -5,6 +5,7 @@ import "./globals.css";
 import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
+import { Open_Sans } from "next/font/google";
 
 
 
@@ -13,8 +14,14 @@ export const metadata: Metadata = {
   description: 'PixelForge Digital crafts stunning, high-performance websites that captivate audiences and drive results. Elevate your online presence with our expert web design and development services.',
 };
 
+
 const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
@@ -25,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${inter.variable} antialiased`}>
+        <body className={`${inter.variable} ${openSans.variable} antialiased`}>
           
           {children}
           <script
